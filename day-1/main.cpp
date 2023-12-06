@@ -19,7 +19,8 @@ int main(int argc, const char **argv) {
 
 	while(std::getline(input, line)) {
 		for(int i = 0; i < line.length(); i++) if(isdigit(line[i])) {
-			sum += 10 * (line[i] - '0'); break;
+			sum += 10 * (line[i] - '0');
+			break;
 		}
 		for(int i = line.length() - 1; i >= 0; i--) if(isdigit(line[i])) {
 			sum += (line[i] - '0');
